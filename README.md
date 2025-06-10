@@ -2,9 +2,15 @@
 
 A modern, responsive astrophotography portfolio built with Next.js 15, TypeScript, and Tailwind CSS. This demo showcases modern web development skills through a beautiful cosmic-themed design.
 
-## 🚀 **Live Production Site**
-**See this project in action:** [Cosmic Lens - www.cosmiclens.gr](https://www.cosmiclens.gr/)  
-*A real astrophotography portfolio built for a professional client*
+## 🚀 **Live Demonstrations**
+
+### **Demo Site**
+**Try the demo:** [photographer-portfolio-demo.vercel.app](https://photographer-portfolio-demo.vercel.app/)  
+*Interactive demo of this exact codebase*
+
+### **Production Client Site**  
+**Real-world application:** [Cosmic Lens - www.cosmiclens.gr](https://www.cosmiclens.gr/)  
+*Professional astrophotography portfolio built for a client*
 
 ![AstroGallery Demo](https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=1200&h=600&fit=crop)
 
@@ -204,14 +210,21 @@ This project is open source and available under the [MIT License](LICENSE).
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/photographer-portfolio-demo/issues).
 
-## 🌐 Production Website
+## 🌐 Live Deployments
 
-This portfolio template was used to create the professional astrophotography website **[Cosmic Lens](https://www.cosmiclens.gr/)**, showcasing real-world application and client satisfaction.
+### **Demo Version**
+**[photographer-portfolio-demo.vercel.app](https://photographer-portfolio-demo.vercel.app/)**  
+Experience this exact codebase in action with interactive features and responsive design.
+
+### **Production Client Site**
+**[Cosmic Lens](https://www.cosmiclens.gr/)**  
+This portfolio template was adapted to create a professional astrophotography website, showcasing real-world application and client satisfaction.
 
 ## 📞 Contact
 
 - **GitHub**: [@ktsourdi](https://github.com/ktsourdi)
 - **LinkedIn**: [Kyros Tsourdinis](https://www.linkedin.com/in/kyros-tsourdinis/)
+- **Demo Site**: [photographer-portfolio-demo.vercel.app](https://photographer-portfolio-demo.vercel.app/)
 - **Client Website**: [Cosmic Lens](https://www.cosmiclens.gr/)
 
 ---
