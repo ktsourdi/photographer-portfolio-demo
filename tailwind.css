@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cosmic-black: #0a0a0a;
+  --color-cosmic-dark: #111111;
+  --color-cosmic-purple: #8b5cf6;
+  --color-cosmic-blue: #3b82f6;
+  --color-cosmic-cyan: #06b6d4;
+  
+  --font-family-sans: Inter, sans-serif;
+  --font-family-mono: 'JetBrains Mono', monospace;
+  
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse 3s ease-in-out infinite;
+} 
