@@ -1,27 +1,21 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import { Github, Globe, ExternalLink } from 'lucide-react';
 
 const Contact = () => {
   const socialLinks = [
     {
-      name: 'GitHub',
+      name: 'Hellenic Web3 Studio',
+      icon: <Globe className="w-6 h-6" />,
+      href: 'https://www.hellenicweb3.com',
+      description: 'The studio that built this demo'
+    },
+    {
+      name: 'Source on GitHub',
       icon: <Github className="w-6 h-6" />,
-      href: 'https://github.com/yourusername',
-      description: 'View source code and other projects'
-    },
-    {
-      name: 'LinkedIn',
-      icon: <Linkedin className="w-6 h-6" />,
-      href: 'https://linkedin.com/in/yourprofile',
-      description: 'Professional network and experience'
-    },
-    {
-      name: 'Email',
-      icon: <Mail className="w-6 h-6" />,
-      href: 'mailto:your.email@example.com',
-      description: 'Get in touch directly'
+      href: 'https://github.com/ktsourdi/photographer-portfolio-demo',
+      description: 'View the code behind this demo'
     }
   ];
 
@@ -57,6 +51,10 @@ const Contact = () => {
                 This portfolio demonstrates modern web development practices through 
                 a beautiful astrophotography theme.
               </p>
+              <p className="text-gray-300 leading-relaxed">
+                It is a demo project by Hellenic Web3 Studio. The photos and their
+                captions are sample content.
+              </p>
             </div>
           </motion.div>
 
@@ -67,7 +65,7 @@ const Contact = () => {
             className="space-y-6"
           >
             <h3 className="text-2xl font-bold text-white mb-6">
-              Connect With Me
+              Links
             </h3>
             
             <div className="space-y-4">

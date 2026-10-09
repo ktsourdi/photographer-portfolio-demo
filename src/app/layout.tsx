@@ -4,12 +4,13 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'AstroGallery Demo - Cosmic Visions',
-  description: 'A demo astrophotography portfolio showcasing modern web development with Next.js, TypeScript, and Tailwind CSS',
+  description: 'A demo astrophotography portfolio by Hellenic Web3 Studio, built with Next.js, TypeScript, and Tailwind CSS',
   keywords: ['astrophotography', 'portfolio', 'nextjs', 'react', 'typescript', 'tailwindcss'],
-  authors: [{ name: 'Your Name' }],
+  authors: [{ name: 'Hellenic Web3 Studio', url: 'https://www.hellenicweb3.com' }],
+  creator: 'Hellenic Web3 Studio',
   openGraph: {
     title: 'AstroGallery Demo - Cosmic Visions',
-    description: 'A demo astrophotography portfolio showcasing modern web development',
+    description: 'A demo astrophotography portfolio by Hellenic Web3 Studio',
     type: 'website',
   },
 }

@@ -208,7 +208,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/photographer-portfolio-demo/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/ktsourdi/photographer-portfolio-demo/issues).
 
 ## 🌐 Live Deployments
 

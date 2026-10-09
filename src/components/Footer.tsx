@@ -26,9 +26,19 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="flex items-center gap-2 text-gray-400 text-sm"
           >
-            <span>© 2025 Built with</span>
+            <span>© 2025 Demo built with</span>
             <Heart className="w-4 h-4 text-red-500" />
-            <span>using Next.js & TypeScript</span>
+            <span>
+              by{' '}
+              <a
+                href="https://www.hellenicweb3.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white underline-offset-4 hover:underline transition-colors"
+              >
+                Hellenic Web3 Studio
+              </a>
+            </span>
           </motion.div>
 
           {/* Tech Stack */}
