@@ -7,7 +7,9 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-cosmic-black">
+    // overflow-x-clip: the About/Contact columns slide in from x: 50, which would
+    // otherwise widen the page on phones and push the fixed nav's menu button off-screen.
+    <main className="min-h-screen bg-cosmic-black overflow-x-clip">
       <Navigation />
       <Hero />
       <Gallery />
