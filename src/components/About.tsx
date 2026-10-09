@@ -8,12 +8,12 @@ const About = () => {
     {
       icon: <Telescope className="w-8 h-8" />,
       title: 'Astrophotography',
-      description: 'Deep space imaging with advanced telescopes and specialized cameras'
+      description: 'A gallery shaped around deep-sky, planetary, lunar and Milky Way work'
     },
     {
       icon: <Camera className="w-8 h-8" />,
-      title: 'Photography',
-      description: 'Professional photography techniques and post-processing expertise'
+      title: 'Photo Details',
+      description: 'Each photo opens in a viewer with its description and, where known, capture details'
     },
     {
       icon: <Code className="w-8 h-8" />,
@@ -22,14 +22,14 @@ const About = () => {
     },
     {
       icon: <Star className="w-8 h-8" />,
-      title: 'Image Processing',
-      description: 'Advanced techniques for enhancing astronomical imagery'
+      title: 'Image Optimization',
+      description: 'Responsive, lazy-loaded images served through Next.js Image'
     }
   ];
 
   const technologies = [
     'Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion',
-    'Node.js', 'PostgreSQL', 'Cloudinary', 'Vercel', 'Git'
+    'Lucide Icons', 'Next.js Image', 'Vercel', 'Vercel Analytics'
   ];
 
   return (
@@ -68,8 +68,9 @@ const About = () => {
                 accessibility, and user experience in mind.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                The project features responsive design, smooth animations, optimized images, 
-                and clean, maintainable code architecture that scales for production applications.
+                The project features responsive design, smooth animations, optimized images 
+                and a filterable gallery. It is a static Next.js site with no database or 
+                backend: the sample photos load from Unsplash.
               </p>
             </div>
 
