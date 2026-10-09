@@ -4,8 +4,8 @@ export const samplePhotos: Photo[] = [
   {
     id: '1',
     title: 'Andromeda Galaxy',
-    description: 'The magnificent Andromeda Galaxy (M31), our nearest galactic neighbor, captured in stunning detail showing its spiral arms and core.',
-    imageUrl: 'https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=800&h=600&fit=crop',
+    description: 'The Andromeda Galaxy (M31), the nearest large spiral galaxy to the Milky Way, with its bright core, dust lanes and the satellite galaxies M32 and M110.',
+    imageUrl: 'https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=800&h=600&fit=crop',
     category: PhotoCategory.DEEP_SPACE,
     featured: true,
     captureDate: '2024-01-15',
@@ -20,43 +20,34 @@ export const samplePhotos: Photo[] = [
   },
   {
     id: '2',
-    title: 'Orion Nebula',
-    description: 'The iconic Orion Nebula (M42), a stellar nursery where new stars are born, showcasing vibrant colors and intricate details.',
+    title: 'Milky Way Core',
+    description: 'The bright galactic centre of the Milky Way: glowing star clouds threaded with dark dust lanes.',
     imageUrl: 'https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=800&h=600&fit=crop',
-    category: PhotoCategory.DEEP_SPACE,
+    category: PhotoCategory.MILKY_WAY,
     featured: true,
     captureDate: '2024-02-10',
     camera: 'Canon EOS R5',
-    lens: 'Canon RF 100-500mm f/4.5-7.1L',
+    lens: 'Canon RF 24-70mm f/2.8L',
     settings: {
-      aperture: 'f/5.6',
-      shutterSpeed: '180s',
-      iso: '1600',
-      focalLength: '500mm'
+      aperture: 'f/2.8',
+      shutterSpeed: '20s',
+      iso: '3200',
+      focalLength: '35mm'
     }
   },
   {
     id: '3',
-    title: 'Jupiter and Its Moons',
-    description: 'Jupiter showing its distinctive bands and the Great Red Spot, with its four largest moons visible in their eternal dance.',
+    title: 'Mars',
+    description: 'A full-disc view of Mars showing its dusty ochre surface, dark surface markings, craters and a bright polar cap.',
     imageUrl: 'https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800&h=600&fit=crop',
     category: PhotoCategory.PLANETS,
-    featured: false,
-    captureDate: '2024-03-05',
-    camera: 'Canon EOS R5',
-    lens: 'Celestron Schmidt-Cassegrain 8"',
-    settings: {
-      aperture: 'f/10',
-      shutterSpeed: '1/60s',
-      iso: '400',
-      focalLength: '2000mm'
-    }
+    featured: false
   },
   {
     id: '4',
-    title: 'Lunar Mare Tranquillitatis',
-    description: 'The Sea of Tranquility, landing site of Apollo 11, showing the intricate crater details and lunar highlands.',
-    imageUrl: 'https://images.unsplash.com/photo-1596727147705-61a532a659bd?w=800&h=600&fit=crop',
+    title: 'Full Moon',
+    description: 'The full Moon, with its dark lunar maria, bright highlands and the long ray systems of young craters.',
+    imageUrl: 'https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?w=800&h=600&fit=crop',
     category: PhotoCategory.MOON,
     featured: false,
     captureDate: '2024-01-28',
@@ -88,20 +79,11 @@ export const samplePhotos: Photo[] = [
   },
   {
     id: '6',
-    title: 'Saturn\'s Rings',
-    description: 'The jewel of the solar system displaying its magnificent ring system and hexagonal polar storm.',
+    title: 'Neptune',
+    description: 'Neptune\'s deep blue atmosphere with the Great Dark Spot and its white companion clouds, the storm that Voyager 2 photographed in 1989.',
     imageUrl: 'https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?w=800&h=600&fit=crop',
     category: PhotoCategory.PLANETS,
-    featured: false,
-    captureDate: '2024-05-20',
-    camera: 'Canon EOS R5',
-    lens: 'Celestron Schmidt-Cassegrain 8"',
-    settings: {
-      aperture: 'f/10',
-      shutterSpeed: '1/30s',
-      iso: '800',
-      focalLength: '2000mm'
-    }
+    featured: false
   }
 ];
 

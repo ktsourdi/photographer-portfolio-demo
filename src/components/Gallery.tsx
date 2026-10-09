@@ -11,7 +11,13 @@ const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState<PhotoCategory | 'ALL'>('ALL');
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
 
-  const categories = ['ALL', ...Object.values(PhotoCategory)];
+  // Only offer filters that have at least one photo, so no filter leads to an empty grid.
+  const categories = [
+    'ALL',
+    ...Object.values(PhotoCategory).filter((category) =>
+      samplePhotos.some((photo) => photo.category === category)
+    ),
+  ];
 
   const filteredPhotos = selectedCategory === 'ALL' 
     ? samplePhotos 
@@ -42,6 +48,9 @@ const Gallery = () => {
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Explore the wonders of the universe through carefully captured moments in time
+          </p>
+          <p className="text-sm text-gray-500 max-w-2xl mx-auto mt-4">
+            Demo content: sample photos from Unsplash. Capture details are illustrative.
           </p>
         </motion.div>
 
@@ -132,6 +141,7 @@ const Gallery = () => {
               >
                 <button
                   onClick={closeModal}
+                  aria-label="Close photo details"
                   className="absolute top-4 right-4 z-10 p-2 bg-black/50 rounded-full text-white hover:bg-black/70 transition-colors"
                 >
                   <X size={20} />
@@ -161,11 +171,14 @@ const Gallery = () => {
                       {selectedPhoto.description}
                     </p>
 
+                    {(selectedPhoto.captureDate || selectedPhoto.camera || selectedPhoto.settings) && (
                     <div className="space-y-3 pt-4 border-t border-gray-700">
-                      <div className="flex items-center gap-2 text-sm text-gray-400">
-                        <Calendar size={16} />
-                        <span>Captured: {new Date(selectedPhoto.captureDate).toLocaleDateString()}</span>
-                      </div>
+                      {selectedPhoto.captureDate && (
+                        <div className="flex items-center gap-2 text-sm text-gray-400">
+                          <Calendar size={16} />
+                          <span>Captured: {new Date(selectedPhoto.captureDate).toLocaleDateString()}</span>
+                        </div>
+                      )}
                       
                       {selectedPhoto.camera && (
                         <div className="flex items-center gap-2 text-sm text-gray-400">
@@ -183,6 +196,7 @@ const Gallery = () => {
                         </div>
                       )}
                     </div>
+                    )}
                   </div>
                 </div>
               </motion.div>

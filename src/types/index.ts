@@ -5,7 +5,7 @@ export interface Photo {
   imageUrl: string;
   category: PhotoCategory;
   featured: boolean;
-  captureDate: string;
+  captureDate?: string;
   camera?: string;
   lens?: string;
   settings?: CameraSettings;
